@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>موقع ذكاءاصطناعي</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- شريط تحميل -->
+  <div class="loader" id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- زر الوضع الليلي -->
+  <button id="darkModeToggle">تبديل الوضع الليلي</button>
+
+  <!-- شريط التنقل -->
+  <nav>
+    <a href="#tools"><i class="fas fa-tools"></i> أدوات الذكاء</a>
+    <a href="#lessons"><i class="fas fa-book"></i> الدروس</a>
+    <a href="#faq"><i class="fas fa-question-circle"></i> الأسئلة الشائعة</a>
+    <a href="#blog"><i class="fas fa-blog"></i> المدونة</a>
+    <a href="#contact"><i class="fas fa-envelope"></i> التواصل</a>
+    <a href="#about"><i class="fas fa-users"></i> من نحن</a>
+  </nav>
+
+  <!-- شريط البحث -->
+  <div class="search-bar">
+    <input type="text" placeholder="ابحث هنا...">
+    <button>بحث</button>
+  </div>
+
+  <!-- العنوان الرئيسي -->
+  <header class="fade-in">
+    <h1>مرحباً بك في موقع ذكاءاصطناعي</h1>
+    <p>هنا تجد أدوات ذكية، دروساً، مقالات، وأجوبة على أسئلتك المتكررة</p>
+  </header>
+
+  <!-- شريط تمرير -->
+  <div class="carousel">
+    <div class="carousel-item active">
+      <img src="d:\photos\Data-science-Muscat.webp" alt="Slide 1">
+    </div>
+    <div class="carousel-item">
+      <img src="d:\photos\istockphoto-908867796-1024x1024.jpg" alt="Slide 2">
+    </div>
+    <div class="carousel-item">
+      <img src="d:\photos\istockphoto-1400026569-1024x1024.jpg" alt="Slide 3">
+    </div>
+    <div class="carousel-item">
+      <img src="d:\photos\istockphoto-1192265931-1024x1024.jpg" alt="Slide 3">
+    </div>
+  </div>
+
+  <!-- قسم الأدوات الذكية -->
+  <section id="tools" class="fade-in">
+    <h2>أدوات الذكاء الاصطناعي</h2>
+    <ul>
+      <li>🤖 <strong>شات ذكي:</strong> دردش مع مساعد افتراضي.</li>
+      <li>📝 <strong>مُولد نصوص:</strong> اكتب مقالات، قصص، أفكار إبداعية.</li>
+      <li>🧠 <strong>تحليل مشاعر:</strong> تحليل المزاج من النصوص.</li>
+      <li>🗣️ <strong>تحويل نص إلى صوت:</strong> دعم كامل للعربية.</li>
+      <li>🎨 <strong>إنشاء صور بالذكاء الاصطناعي:</strong> من وصف نصي.</li>
+      <li>📄 <strong>تلخيص مقالات:</strong> لتحصل على خلاصة المحتوى بسرعة.</li>
+      <li>📊 <strong>نظام توصية ذكي:</strong> اقتراح أفلام أو كتب حسب اهتماماتك.</li>
+      <li>📁 <strong>بناء سيرة ذاتية:</strong> مولد CV احترافي.</li>
+    </ul>
+  </section>
+
+  <!-- قسم الدروس -->
+  <div id="lessons" class="lesson-section fade-in">
+    <h2>الدروس</h2>
+    <img src="lesson.jpg" alt="Lessons">
+    <p>ابدأ بتعلم الذكاء الاصطناعي، تعلم الآلة، أو البرمجة من البداية حتى الاحتراف.</p>
+  </div>
+
+  <!-- قسم الأسئلة الشائعة -->
+  <div id="faq" class="faq-section fade-in">
+    <h2>الأسئلة الشائعة</h2>
+    <p><strong>كيف أبدأ؟</strong> من خلال أدواتنا ودروسنا التفاعلية.</p>
+    <p><strong>هل الأدوات مجانية؟</strong> نعم، كل الأدوات الأساسية مجانية للاستخدام.</p>
+  </div>
+
+  <!-- قسم المدونة -->
+  <div id="blog" class="blog-section fade-in">
+    <h2>أحدث المقالات</h2>
+    <p><strong>الذكاء الاصطناعي في حياتنا اليومية</strong></p>
+    <p><strong>أفضل 5 أدوات مفتوحة المصدر</strong></p>
+  </div>
+
+  <!-- قسم من نحن -->
+  <section id="about" class="fade-in">
+    <h2>من نحن</h2>
+    <p>فريق يهتم بتسهيل الذكاء الاصطناعي للجميع، من المبتدئين حتى المحترفين.</p>
+  </section>
+
+  <!-- قسم التواصل -->
+  <div id="contact" class="contact-section fade-in">
+    <h2>تواصل معنا</h2>
+    <form>
+      <input type="text" placeholder="اسمك" required>
+      <input type="email" placeholder="بريدك الإلكتروني" required>
+      <textarea placeholder="رسالتك" rows="5" required></textarea>
+      <button type="submit">إرسال</button>
+    </form>
+  </div>
+
+  <!-- الملاحظات -->
+  <div class="feedback-section fade-in">
+    <h2>رأيك يهمنا</h2>
+    <form>
+      <input type="text" placeholder="اكتب ملاحظتك هنا" required>
+      <button type="submit">أرسل</button>
+    </form>
+  </div>
+
+  <!-- فقرة شكر -->
+  <div class="thank-you fade-in">
+    <p>شكراً لزيارتك! تابعنا على <a href="#">فيسبوك</a> و <a href="#">تويتر</a>.</p>
+  </div>
+
+  <!-- الوضع الليلي واللودر -->
+  <script>
+    window.addEventListener("load", function () {
+      document.getElementById("loader").style.display = "none";
+    });
+
+    document.getElementById("darkModeToggle").addEventListener("click", function () {
+      document.body.classList.toggle("dark-mode");
+      document.querySelector("nav").classList.toggle("dark-mode");
+    });
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>موقع ذكاء اصطناعي</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- شريط تحميل -->
+  <div class="loader" id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- زر الوضع الليلي -->
+  <button id="darkModeToggle">تبديل الوضع الليلي</button>
+
+  <!-- شريط التنقل -->
+  <nav>
+    <a href="#chat">🤖 شات ذكي</a>
+    <a href="#text-generator">📝 مولد نصوص</a>
+    <a href="#emotion-analysis">🧠 تحليل مشاعر</a>
+    <a href="#text-to-speech">🗣️ تحويل نص إلى صوت</a>
+    <a href="#image-generation">🎨 إنشاء صور</a>
+    <a href="#article-summary">📄 تلخيص مقالات</a>
+    <a href="#recommendation-system">📊 توصية ذكية</a>
+    <a href="#cv-builder">📁 بناء سيرة ذاتية</a>
+  </nav>
+
+  <!-- الشات الذكي -->
+  <div id="chat" class="chat-container">
+    <h2>🤖 شات ذكي</h2>
+    <div id="chatbox" class="chatbox">
+      <div class="messages"></div>
+      <input type="text" id="user-input" placeholder="أكتب سؤالك هنا...">
+      <button id="send-btn">إرسال</button>
+    </div>
+  </div>
+
+  <!-- الأدوات الأخرى -->
+  <div class="tools-section">
+    <!-- مولد نصوص -->
+    <section id="text-generator">
+      <h2>📝 مولد نصوص</h2>
+      <p>اكتب مقالات، قصص، أفكار إبداعية باستخدام الذكاء الاصطناعي.</p>
+      <button>ابدأ الكتابة</button>
+    </section>
+    <!-- باقي الأدوات -->
+  </div>
+
+  <script>
+    // تفاعل الشات الذكي
+    document.getElementById("send-btn").addEventListener("click", function() {
+      let userInput = document.getElementById("user-input").value;
+      if (userInput) {
+        let userMessage = document.createElement("div");
+        userMessage.classList.add("message");
+        userMessage.classList.add("user");
+        userMessage.textContent = userInput;
+        document.querySelector(".messages").appendChild(userMessage);
+
+        let botMessage = document.createElement("div");
+        botMessage.classList.add("message");
+        botMessage.classList.add("bot");
+        botMessage.textContent = "هذه الإجابة المبدئية: " + userInput;  // هنا ممكن تضيف معالجة أكثر
+        document.querySelector(".messages").appendChild(botMessage);
+
+        document.getElementById("user-input").value = '';  // مسح المدخل بعد الإرسال
+      }
+    });
+  </script>
+  
+</body>
+</html>
